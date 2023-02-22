@@ -11,7 +11,7 @@
 
 ### To solve it we need to...
 
-- clone the repo, access to the folder VIP BANK
+- clone the repo and access to the folder VIP BANK
 
 ```
 git clone "url"
