@@ -12,3 +12,6 @@ require(price==msg.value,"INVALID_VALUE");
 as we paid the first minting price.
 
 ## To solve it we need to...
+1. Pay the minting fee.
+2. Fill up the onERC721Received() function in our contract with the logic to recall the claim() function from the minting contract.
+3. Call the claim function & then it will call internally the function onERC721Received() and it will inicialized a loop of claims. 
