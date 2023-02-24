@@ -20,7 +20,7 @@ contract D31eg4t3{
     constructor() {
         owner = msg.sender;
     }
-
+    
     function hackMe(bytes calldata bites) public returns(bool, bytes memory) {
         (bool r, bytes memory msge) = address(msg.sender).delegatecall(bites);
         return (r, msge);

@@ -25,7 +25,7 @@ describe("Attacker", function () {
   describe("Deployment", function () {
     it("Attack", async function () {
       const { d31eg4t3, signers, attacker } = await loadFixture(deploy);
-
+      
       await attacker.hack();
 
       expect(await d31eg4t3.owner()).to.equal(signers[1].address);
